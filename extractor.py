@@ -71,7 +71,7 @@ def convert_pdf_to_image (pdf):
     from pdf2image import convert_from_path, convert_from_bytes
     # from IPython.display import display #, Image
 
-    images = convert_from_bytes(open(pdf, 'rb').read(), size=800)
+    images = convert_from_bytes(open(pdf, 'rb').read())
     # display(images[0])
     #i = 0
     #for page in images:

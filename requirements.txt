@@ -1,11 +1,11 @@
+starlette
+flask
+flask_cors
+werkzeug
 object-detection-0.1==0.1
 poppler-utils
 numpy
 pdf2image
-OpenCV-Python
-
-fastapi==0.61.1
-uvicorn==0.11.8
 pillow==8.0.1
 python-multipart==0.0.5
 pytest==6.1.2
