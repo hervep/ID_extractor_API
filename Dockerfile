@@ -28,13 +28,3 @@ RUN pip install -r requirements.txt
 EXPOSE 80
 ENV NOM patrick_djakou_Image_ID_Extraction_Docker
 CMD ["python3","main.py"]
-=======
-FROM tiangolo/uvicorn-gunicorn-fastapi:python3.8-slim
-WORKDIR /app
-COPY . /app
-RUN pip install opencv-python-headless
-RUN pip install tensorflow==2.3.1
-RUN pip install -r requirements.txt
-ENV NOM Image_ID_Extraction_Docker
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "5000"]
->>>>>>> ID_extractor_AP/main
